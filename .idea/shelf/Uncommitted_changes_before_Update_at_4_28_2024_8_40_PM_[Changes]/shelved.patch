@@ -1,0 +1,30 @@
+Index: algorithm/src/main/java/com/yond/hot100/doublePointer/MaxArea.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/algorithm/src/main/java/com/yond/hot100/doublePointer/MaxArea.java b/algorithm/src/main/java/com/yond/hot100/doublePointer/MaxArea.java
+new file mode 100644
+--- /dev/null	(date 1714263868797)
++++ b/algorithm/src/main/java/com/yond/hot100/doublePointer/MaxArea.java	(date 1714263868797)
+@@ -0,0 +1,20 @@
++package com.yond.hot100.doublePointer;
++
++/**
++ * @Date 4/28/2024
++ * @Author yond
++ * @Description container with most water
++ */
++public class MaxArea {
++
++
++    /**
++     * [1,8,6,2,5,4,8,3,7]
++     */
++    public int maxArea(int[] height) {
++        int left = 0;
++        int right = 0;
++        
++    }
++
++}
