@@ -67,14 +67,16 @@ public class ThreeSum {
     public List<List<Integer>> nSum(int[] nums) {
         // 双指针+递归
         Arrays.sort(nums);
-        return nSUmTarget(nums, 3, 0, 0);
+        List<List<Integer>> result = new ArrayList<>();
+        nSUmTarget(result, nums, 3, 0, 0);
+        return result;
     }
 
 
-    private List<List<Integer>> nSUmTarget(int[] nums, int n, int index, int target) {
+    private void nSUmTarget(List<List<Integer>> result, int[] nums, int n, int index, int target) {
         int arrayLength = nums.length;
         if (arrayLength < 2 || n < 2) {
-            return Collections.emptyList();
+            return;
         }
         if (n == 2) {
             int left = index;
@@ -82,7 +84,10 @@ public class ThreeSum {
             while (left < right) {
                 int sum = nums[left] + nums[right];
                 if (sum == target) {
-
+                    List<Integer> item = new ArrayList<>();
+                    item.add(nums[left]);
+                    item.add(nums[right]);
+                    result.add(item);
                 }
                 if (sum < target) {
                     left++;
@@ -91,9 +96,15 @@ public class ThreeSum {
                 }
             }
         }
-        // 递归
+        nSUmTarget(result, nums, --n, index++, -nums[index]);
     }
 
 
+    public static void main(String[] args) {
+        ThreeSum threeSum = new ThreeSum();
+        int[]nums = {-1, 0, 1, 2, -1, -4};
+        System.out.println(threeSum.threeSum(nums));
+        System.out.println(threeSum.nSum(nums));
+    }
 
 }
