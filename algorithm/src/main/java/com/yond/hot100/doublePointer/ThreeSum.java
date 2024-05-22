@@ -94,7 +94,7 @@ public class ThreeSum {
         }
         List<Integer> item = new ArrayList<>();
         List<List<Integer>> lists = nSUmTarget(result, nums, --n, index++, -nums[index]);
-        if (Collectu)
+        return null;
     }
 
 
