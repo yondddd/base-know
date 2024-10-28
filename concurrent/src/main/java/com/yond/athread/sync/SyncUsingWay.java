@@ -22,21 +22,21 @@ public class SyncUsingWay {
     }
 
     public void method() {
-        ThreadGroup threadGroup = Thread.currentThread().getThreadGroup();
-        Thread thread = new Thread(threadGroup, );
-        Thread.sleep();
-        ExecutorService service = new ThreadPoolExecutor();
-        service.execute();
-        ArrayBlockingQueue arrayBlockingQueue = new ArrayBlockingQueue<>();
-        arrayBlockingQueue.put();
-        new StampedLock();
-        ArrayList<Object> objects = new ArrayList<>();
-        objects.get();
-        new CountDownLatch();
-        new InputStream()
-        synchronized (this){
-            System.out.println("method");
-        }
+//        ThreadGroup threadGroup = Thread.currentThread().getThreadGroup();
+//        Thread thread = new Thread(threadGroup, );
+//        Thread.sleep();
+//        ExecutorService service = new ThreadPoolExecutor();
+//        service.execute();
+//        ArrayBlockingQueue arrayBlockingQueue = new ArrayBlockingQueue<>();
+//        arrayBlockingQueue.put();
+//        new StampedLock();
+//        ArrayList<Object> objects = new ArrayList<>();
+//        objects.get();
+//        new CountDownLatch();
+//        new InputStream()
+//        synchronized (this){
+//            System.out.println("method");
+//        }
     }
 
 }

@@ -1,4 +1,4 @@
-package com.yond.firstWeek.courseIntrodution.hello;
+package com.yond.princeton.part1.module1.hello;
 
 import java.util.Arrays;
 import java.util.Collections;
