@@ -13,6 +13,7 @@
         <module>concurrent</module>
         <module>io</module>
         <module>jvm</module>
+        <module>base-common</module>
     </modules>
 
 
