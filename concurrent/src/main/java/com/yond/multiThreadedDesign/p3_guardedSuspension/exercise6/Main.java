@@ -5,7 +5,6 @@ public class Main {
 		RequestQueue requestQueue = new RequestQueue();
 		Thread alice = new ClientThread(requestQueue, "Alice", 314159L);
 		Thread bobby = new ServerThread(requestQueue, "Bobby", 265358L);
-		alice.start();
 		bobby.start();
 		
 		try {

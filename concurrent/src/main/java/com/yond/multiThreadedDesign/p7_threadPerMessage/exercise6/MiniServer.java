@@ -19,16 +19,14 @@ public class MiniServer {
 				System.out.println("Accepting...");
 				final Socket clientSocket = serverSocket.accept();
 				System.out.println("Connected to " + clientSocket);
-				
-				new Thread() {
-					public void run() {
-						try {
-							Service.service(clientSocket);
-						} catch (IOException e) {
-							e.printStackTrace();
-						}
-					};
-				}.start();
+                
+                new Thread(() -> {
+                    try {
+                        Service.service(clientSocket);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }).start();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
