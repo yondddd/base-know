@@ -1,4 +1,4 @@
-package com.yond.multiThreadedDesign.p2_immutable.exercise5;
+package com.yond.multiThreadedDesign.p2_Immutable.exercise5;
 
 public class Line {
 	private final Point startPoint;

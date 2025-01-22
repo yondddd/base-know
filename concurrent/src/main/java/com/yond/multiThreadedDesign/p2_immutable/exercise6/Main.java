@@ -1,4 +1,4 @@
-package com.yond.multiThreadedDesign.p2_immutable.exercise6;
+package com.yond.multiThreadedDesign.p2_Immutable.exercise6;
 
 public class Main {
 	public static void main(String[] args) {

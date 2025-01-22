@@ -1,4 +1,4 @@
-package com.yond.multiThreadedDesign.p2_immutable.exercise4;
+package com.yond.multiThreadedDesign.p2_Immutable.exercise4;
 
 public class Main {
 	

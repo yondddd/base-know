@@ -1,4 +1,4 @@
-package com.yond.multiThreadedDesign.p2_immutable.sample;
+package com.yond.multiThreadedDesign.p2_Immutable.sample;
 
 public final class Person {
 	private final String name;

@@ -1,4 +1,4 @@
-package com.yond.multiThreadedDesign.p2_immutable.jucSample2;
+package com.yond.multiThreadedDesign.p2_Immutable.jucSample2;
 
 import java.util.ArrayList;
 import java.util.Collections;

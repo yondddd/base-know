@@ -1,5 +1,4 @@
-package com.yond.multiThreadedDesign.p2_immutable.exercise3;
-
+package com.yond.multiThreadedDesign.p2_Immutable.exercise3;
 public class Main {
 	private static final long CALL_COUNT = 1000000000L;
 	public static void main(String[] args) {
