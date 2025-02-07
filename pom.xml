@@ -14,6 +14,7 @@
         <module>io</module>
         <module>jvm</module>
         <module>base-common</module>
+        <module>mysql</module>
     </modules>
 
 
