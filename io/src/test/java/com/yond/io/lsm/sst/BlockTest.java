@@ -1,6 +1,6 @@
-package com.yond.lsm.sst;
+package com.yond.io.lsm.sst;
 
-import com.yond.lsm.Config;
+import com.yond.io.lsm.Config;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;

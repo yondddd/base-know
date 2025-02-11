@@ -1,4 +1,4 @@
-package com.yond.lsm.memtable;
+package com.yond.io.lsm.memtable;
 
 @FunctionalInterface
 public interface MemTableConstructor {

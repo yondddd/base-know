@@ -1,4 +1,4 @@
-package com.yond.lsm.wal;
+package com.yond.io.lsm.wal;
 
 public interface WalConstants {
     int END_MARK_BYTES = 4;

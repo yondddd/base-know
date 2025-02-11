@@ -1,7 +1,7 @@
-package com.yond.lsm.benchmark;
+package com.yond.io.lsm.benchmark;
 
-import com.yond.lsm.Config;
-import com.yond.lsm.Tree;
+import com.yond.io.lsm.Config;
+import com.yond.io.lsm.Tree;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
@@ -12,7 +12,7 @@ import java.io.File;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
-import static com.yond.lsm.TreeTestHelper.cleanFolder;
+import static com.yond.io.lsm.TreeTestHelper.cleanFolder;
 
 @State(Scope.Benchmark)
 public class TreeBenchmark {

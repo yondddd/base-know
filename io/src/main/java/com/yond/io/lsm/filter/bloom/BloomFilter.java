@@ -1,7 +1,7 @@
-package com.yond.lsm.filter.bloom;
+package com.yond.io.lsm.filter.bloom;
 
 import com.google.common.hash.Hashing;
-import com.yond.lsm.filter.BitsArray;
+import com.yond.io.lsm.filter.BitsArray;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;

@@ -1,4 +1,4 @@
-package com.yond.lsm.filter;
+package com.yond.io.lsm.filter;
 
 public interface Filter {
     //添加key到bloom过滤器中

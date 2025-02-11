@@ -1,7 +1,7 @@
-package com.yond.lsm.wal;
+package com.yond.io.lsm.wal;
 
-import com.yond.lsm.memtable.MemTable;
-import com.yond.lsm.util.Kv;
+import com.yond.io.lsm.memtable.MemTable;
+import com.yond.io.lsm.util.Kv;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ import java.nio.file.Files;
 import java.util.List;
 import java.util.Optional;
 
-import static com.yond.lsm.wal.WalConstants.END_MARK;
+import static com.yond.io.lsm.wal.WalConstants.END_MARK;
 
 public class WalReaderTest {
     

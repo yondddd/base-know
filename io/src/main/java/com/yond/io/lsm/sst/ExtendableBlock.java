@@ -1,6 +1,6 @@
-package com.yond.lsm.sst;
+package com.yond.io.lsm.sst;
 
-import com.yond.lsm.Config;
+import com.yond.io.lsm.Config;
 
 public class ExtendableBlock extends Block {
     private final int blockSize;

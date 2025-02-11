@@ -1,4 +1,4 @@
-package com.yond.lsm.util;
+package com.yond.io.lsm.util;
 
 import com.sun.jna.*;
 

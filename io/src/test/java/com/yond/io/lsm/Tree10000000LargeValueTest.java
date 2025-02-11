@@ -1,4 +1,4 @@
-package com.yond.lsm;
+package com.yond.io.lsm;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.util.Random;
 
-import static com.yond.lsm.TreeTestHelper.cleanFolder;
+import static com.yond.io.lsm.TreeTestHelper.cleanFolder;
 
 public class Tree10000000LargeValueTest {
     @Test

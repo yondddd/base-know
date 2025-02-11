@@ -1,11 +1,11 @@
-package com.yond.lsm;
+package com.yond.io.lsm;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
-import static com.yond.lsm.TreeTestHelper.cleanFolder;
+import static com.yond.io.lsm.TreeTestHelper.cleanFolder;
 
 public class TreeBaseTest {
     @Test

@@ -1,6 +1,6 @@
-package com.yond.lsm.filter;
+package com.yond.io.lsm.filter;
 
-import com.yond.lsm.filter.bloom.BloomFilter;
+import com.yond.io.lsm.filter.bloom.BloomFilter;
 
 public class LsmBloomFilter implements Filter {
     private final BloomFilter bloomFilter = BloomFilter.createByFn(20, 400);

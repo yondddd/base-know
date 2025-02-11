@@ -1,4 +1,4 @@
-package com.yond.lsm.wal;
+package com.yond.io.lsm.wal;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.file.Files;
 
-import static com.yond.lsm.wal.WalConstants.END_MARK;
+import static com.yond.io.lsm.wal.WalConstants.END_MARK;
 
 
 public class WalWriterTest {

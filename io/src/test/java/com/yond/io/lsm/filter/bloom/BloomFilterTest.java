@@ -1,6 +1,6 @@
-package com.yond.lsm.filter.bloom;
+package com.yond.io.lsm.filter.bloom;
 
-import com.yond.lsm.filter.BitsArray;
+import com.yond.io.lsm.filter.BitsArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
