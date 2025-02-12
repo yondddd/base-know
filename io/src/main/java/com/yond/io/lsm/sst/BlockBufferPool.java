@@ -37,8 +37,8 @@ public class BlockBufferPool {
             for (int i = 0; i < poolSize; i++) {
                 ByteBuffer byteBuffer = ByteBuffer.allocateDirect(bufferSize);
                 //锁定内存
-                long address = ((DirectBuffer) byteBuffer).address();
-                Pointer pointer = new Pointer(address);
+//                long address = ((DirectBuffer) byteBuffer).address();
+                Pointer pointer = new Pointer(0);
                 LibC.INSTANCE.mlock(pointer, new NativeLong(bufferSize));
                 //放入队列
                 availableBuffers.offerLast(byteBuffer);
@@ -86,8 +86,8 @@ public class BlockBufferPool {
     }
     
     private void releaseAndCleanBuffer(ByteBuffer byteBuffer) {
-        final long address = ((DirectBuffer) byteBuffer).address();
-        Pointer pointer = new Pointer(address);
+//        final long address = ((DirectBuffer) byteBuffer).address();
+        Pointer pointer = new Pointer(0);
         LibC.INSTANCE.munlock(pointer, new NativeLong(this.bufferSize));
         BufferCleanUtil.clean(byteBuffer);
     }
