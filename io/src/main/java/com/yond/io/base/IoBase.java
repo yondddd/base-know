@@ -54,7 +54,7 @@ public class IoBase {
 //            generator.generateFile(1, "GB", "E:\\file\\1g.txt");
 //            generator.generateFile(5, "GB", "E:\\file\\5g.txt");
 //            generator.generateFile(10, "GB", "E:\\file\\10g.txt");
-            generator.generateFile(1, "GB", "D:\\file\\1g.txt");
+            generator.generateFile(100, "MB", "F:\\file\\100m.txt");
 //            generator.generateFile(50, "GB", "E:\\file\\50.txt");
 //            generator.generateFile(100, "GB", "E:\\file\\100g.txt");
         } catch (IOException e) {
