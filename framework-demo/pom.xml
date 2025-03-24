@@ -11,10 +11,70 @@
 
     <artifactId>framework-demo</artifactId>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yond</groupId>
+            <artifactId>base-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.logstash.logback</groupId>
+                    <artifactId>logstash-logback-encoder</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <finalName>blog-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <mainClass>com.yond.frameworkDemo.spring.Application</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

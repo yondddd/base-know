@@ -2,7 +2,7 @@ package com.yond.common.util;
 
 /**
  * @Description:
- * @Author: WangJieLong
+ * @Author: yond
  * @Date: 2025-01-22
  */
 public class LogUtil {
@@ -12,8 +12,8 @@ public class LogUtil {
     
     }
     
-    public static void console(Object o) {
-        System.out.println(o);
+    public static void console(Object... args) {
+        System.out.println(args);
     }
     
 }

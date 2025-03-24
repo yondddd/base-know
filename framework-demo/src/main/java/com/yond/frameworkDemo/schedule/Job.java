@@ -2,7 +2,7 @@ package com.yond.frameworkDemo.schedule;
 
 /**
  * @Description:
- * @Author: WangJieLong
+ * @Author: yond
  * @Date: 3/15/2025
  */
 public class Job implements Comparable<Job> {
