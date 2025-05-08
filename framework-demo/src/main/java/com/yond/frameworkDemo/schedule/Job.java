@@ -1,5 +1,12 @@
 package com.yond.frameworkDemo.schedule;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
 /**
  * @Description:
  * @Author: yond
@@ -39,5 +46,17 @@ public class Job implements Comparable<Job> {
     @Override
     public int compareTo(Job o) {
         return Long.compare(this.startTime, o.startTime);
+    }
+    
+    public static void main(String[] args) throws Exception {
+        File file = new File("C:\\Users\\yond\\Desktop\\New folder (3)\\New folder\\人脸识别照片库\\20250406");
+        int index = 0;
+        File[] files = file.listFiles();
+        for (File file1 : files) {
+            FileInputStream fileInputStream = new FileInputStream(file1);
+            index++;
+            Path path = Paths.get("C:\\Users\\yond\\Desktop\\New folder (3)\\New folder\\20250406\\" + index + ".jpg");
+            Files.copy(fileInputStream, path, StandardCopyOption.REPLACE_EXISTING);
+        }
     }
 }

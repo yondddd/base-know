@@ -1,12 +1,15 @@
 package com.yond.concurrent.athread;
 
+import java.util.concurrent.FutureTask;
+
 /**
  * @author yond
  * @date 10/27/2024
  * @description
  */
 public class ThreadState {
-
+    
+    
     private static final ThreadState jucBase = new ThreadState();
 
     public static ThreadState getInstance() {
@@ -20,7 +23,9 @@ public class ThreadState {
 
 
     public void threadState() {
-        Thread thread = new Thread();
+        new Thread(new FutureTask<>());
+        Thread thread = new Thread(() -> {
+        });
         System.out.println(thread.getState());
         thread.start();
         System.out.println(thread.getState());

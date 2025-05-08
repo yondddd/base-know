@@ -11,12 +11,11 @@
     <modules>
         <module>algorithm</module>
         <module>concurrent</module>
-        <module>io</module>
-        <module>jvm</module>
         <module>base-common</module>
         <module>mysql</module>
         <module>design-pattern</module>
         <module>framework-demo</module>
+        <module>se</module>
     </modules>
 
 
