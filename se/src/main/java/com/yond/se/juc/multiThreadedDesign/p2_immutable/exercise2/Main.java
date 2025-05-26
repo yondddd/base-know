@@ -1,0 +1,17 @@
+package com.yond.se.juc.multiThreadedDesign.p2_immutable.exercise2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String s = "BAT";
+		String t = s.replace('B', 'C');
+		System.out.println("s = " + s);
+		System.out.println("t = " + t);
+		if(s == t) {
+			System.out.println("s == t");
+		} else {
+			System.out.println("s != t");
+		}
+	}
+
+}
