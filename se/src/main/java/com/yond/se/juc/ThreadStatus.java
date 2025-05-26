@@ -13,7 +13,7 @@ public class ThreadStatus {
     /**
      * 1. 为什么一定要获取到监视器锁 才能进行wait
      */
-    
+    private static final ThreadLocal<String> threadLocal = new ThreadLocal<>();
     
     public static void main(String[] args) {
         Thread currentThread = Thread.currentThread();
