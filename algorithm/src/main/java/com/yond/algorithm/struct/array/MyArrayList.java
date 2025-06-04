@@ -1,15 +1,18 @@
 package com.yond.algorithm.struct.array;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 /**
  * @Description:
  * @Author: WangJieLong
- * @Date: 2025-05-27
+ * @Date: 5/26/2025
  */
 public class MyArrayList<E> implements List<E> {
     
-    private Object[] data;
+    private E[] data;
     
     @Override
     public int size() {
@@ -23,8 +26,12 @@ public class MyArrayList<E> implements List<E> {
     
     @Override
     public boolean contains(Object o) {
-        for (Object datum : data) {
-            if (Objects.equals(datum, o)) {
+        Thread thread = Thread.currentThread();
+        thread.getThreadGroup();
+        thread.threadId();
+        
+        for (E datum : data) {
+            if (datum.equals(o)) {
                 return true;
             }
         }
@@ -38,11 +45,11 @@ public class MyArrayList<E> implements List<E> {
     
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        return data;
     }
     
     @Override
-    public <T> T[] toArray(T[] a) {
+    public <T1> T1[] toArray(T1[] a) {
         return null;
     }
     
